@@ -19,7 +19,7 @@ body {
     line-height: 1.7;
     position: relative;
     box-sizing: border-box;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 h2{
@@ -160,15 +160,66 @@ h2{
 
 
 
-.info,
-.contact,
-.footer{
-    padding: 2em 0;
-}
-
 .section-title{
     font-size: 2rem;
     margin: 0.5em 0;
+}
+
+/* ABOUT LAYOUT */
+
+.about__content{
+    margin: 0.7em 0.5em;
+}
+
+.skills{
+    list-style-type: "⯈";
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.skills-list{
+    margin: 0.25em;
+    padding-left: 0.5em;
+}
+
+/* CONTACT LAYOUT */
+
+.contact__icon{
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.contact__btn{
+margin: 0 auto;}
+
+
+/* FOOTER LAYOUT */
+
+.social{
+    margin-bottom: 1em;
+    display: flex;
+justify-content: center;
+}
+
+.social-list{
+    list-style: none;
+}
+
+.social-link{
+    color: #a8b2d1;
+    margin: 0 0.5em;
+    font-size: 2rem;
+}
+
+.social-link:hover,
+.social-link:focus{
+    color: #fff;
+}
+
+.copyright{
+    opacity: 0.4;
+    font-size: 1.3rem;
 }
 
 /* ANIMATIONS */
