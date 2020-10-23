@@ -32,8 +32,29 @@ h2{
     grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
 }
 
-.title{
+.hero > *,
+.about > *,
+.info > *,
+.portfolio >*,
+.contact>*,
+.footer>* {
+    grid-column: 2/3;
+}
+
+.title,
+.info,
+.portfolio,
+.contact,
+.footer{
     text-align: center;
+}
+
+.hero,
+.info,
+.portfolio,
+.contact,
+.footer{
+    padding: 2em 0;
 }
 
 /* HEADER LAYOUT */
@@ -61,16 +82,10 @@ h2{
     transform: translate(-50%, -50%);
 }
 
+
+
 /* HERO LAYOUT */
 
-.hero{
-   
-    padding: 2em 0;
-}
-
-.hero > * {
-    grid-column: 2/3;
-}
 
 /* HERO TYPOGRAPHY */
 
@@ -143,14 +158,12 @@ h2{
 } */
 
 
-.about > *,
-.info > * {
-    grid-column: 2/3;
-}
 
-.info{
+
+.info,
+.contact,
+.footer{
     padding: 2em 0;
-    text-align: center;
 }
 
 .section-title{
