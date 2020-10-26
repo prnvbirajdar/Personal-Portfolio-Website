@@ -30,19 +30,24 @@ h2{
 .main-grid{
     display: grid;
     grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+    grid-column-gap: 2em ;
 }
 
 .hero > *,
 .about > *,
-.info > *,
+.info-title >*,
+.col,
 .portfolio >*,
 .contact>*,
 .footer>* {
     grid-column: 2/3;
 }
 
+/* seperated info-title and col in info section because it was breaking under same section */
+
 .title,
 .info,
+.info-title,
 .portfolio,
 .contact,
 .footer{
@@ -50,7 +55,7 @@ h2{
 }
 
 .hero,
-.info,
+.info-title,
 .portfolio,
 .contact,
 .footer{
@@ -82,10 +87,7 @@ h2{
     transform: translate(-50%, -50%);
 }
 
-
-
 /* HERO LAYOUT */
-
 
 /* HERO TYPOGRAPHY */
 
@@ -170,12 +172,19 @@ h2{
     list-style-type: "⯈";
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    justify-content: center;
+    padding-left: 1em;
 }
 
 .skills-list{
     margin: 0.25em;
     padding-left: 0.5em;
+}
+
+/* INFO TITLE LAYOUT */
+
+.info-title{
+    padding-bottom: 0;
 }
 
 /* CONTACT LAYOUT */
@@ -189,7 +198,6 @@ h2{
     margin: 0 auto 5em auto;
 
 }
-
 
 /* FOOTER LAYOUT */
 
@@ -317,6 +325,37 @@ h2{
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* MEDIA QUERIES FOR BIG SCREEN */
+
+@media (min-width: 600px){
+
+    .main-grid{
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 250px)) minmax(1em, 1fr);
+    }
+
+    .hero > *,
+    .about > *,
+    .info-title>*,
+    .col,
+    .portfolio >*,
+    .contact>*,
+    .footer>* {
+        grid-column: 2/span 3;
+    }
+
+    .hero{
+        padding: 5em 0;
+    }
+
+    .col{
+        grid-column: span 1;
+    }
+
+    .col:first-child{
+        grid-column: 2/span 1;
     }
 }
 
