@@ -20,23 +20,36 @@
 
   <body>
     <header class="header main-grid">
+      <a id="top"></a>
       <div class="header__content">
-        <a class="logo-link">
-          <img src="./laptop (3).png" alt="website logo" class="logo" />
+        <a class="logo-link" href="#top">
+          <h3 class="logo">p<span class="logo-b">b</span></h3>
         </a>
 
         <nav class="header__nav">
-          <div class="menu-btn">
+          <!-- <div aria-label="close navigation" class="menu-btn">
             <div class="menu-btn__burger"></div>
-          </div>
+          </div> -->
           <!-- <button class="close-nav">&times;</button> -->
           <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">about me</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">what i do</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">portfolio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">about me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#what-i-do" class="nav-link">what i do</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">contact</a>
+            </li>
           </ul>
         </nav>
+
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
       </div>
     </header>
 
@@ -55,6 +68,7 @@
       </section>
 
       <section class="about main-grid">
+        <a id="about"></a>
         <h2 class="title">About Me</h2>
         <p class="about__content">
           I’m a first year student at Algonquin College studying Computer
@@ -87,6 +101,7 @@
       </section>
 
       <section class="info-title main-grid">
+        <a id="what-i-do"></a>
         <h2 class="title info__title">What I Do</h2>
       </section>
 
@@ -125,6 +140,7 @@
       </section>
 
       <section class="portfolio main-grid">
+        <a id="portfolio"></a>
         <h2 class="title portfolio__title">Some Things I've Built</h2>
         <div class="project">Project 1</div>
         <div class="project">Project 2</div>
@@ -132,6 +148,7 @@
       </section>
 
       <section class="contact main-grid">
+        <a id="contact"></a>
         <a class="contact__icon"><i class="far fa-paper-plane"></i> </a>
 
         <h2 class="title contact__title">Get In Touch!</h2>
@@ -156,7 +173,7 @@
             ></a>
           </li>
         </ul>
-        <p class="copyright">© Pranav Birajdar 2020</p>
+        <a class="copyright" href="#top">© Pranav Birajdar 2020</a>
       </footer>
     </main>
 

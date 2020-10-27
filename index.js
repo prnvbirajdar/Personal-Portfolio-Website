@@ -1,11 +1,7 @@
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-  }
-});
+const menuToggle = document.querySelector('.menu-toggle');
+
+menuToggle.addEventListener('click', () => {
+  const nav = document.querySelector('.header__nav')
+    nav.classList.toggle('header__nav--open');
+    menuToggle.classList.toggle('open')
+}); 
