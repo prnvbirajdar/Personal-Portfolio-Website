@@ -20,17 +20,19 @@
 
   <body>
     <header class="header main-grid">
-      <a id="top"></a>
       <div class="header__content">
         <a class="logo-link" href="#top">
           <h3 class="logo">p<span class="logo-b">b</span></h3>
         </a>
 
+        <button aria-label="open navigation" class="open-button">
+          &#9776;
+        </button>
+
         <nav class="header__nav">
-          <!-- <div aria-label="close navigation" class="menu-btn">
-            <div class="menu-btn__burger"></div>
-          </div> -->
-          <!-- <button class="close-nav">&times;</button> -->
+          <button aria-label="close navigation" class="close-button">
+            &times;
+          </button>
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#about" class="nav-link">about me</a>
@@ -46,10 +48,7 @@
             </li>
           </ul>
         </nav>
-
-        <div class="menu-toggle">
-          <div class="hamburger"></div>
-        </div>
+        <a id="top"></a>
       </div>
     </header>
 

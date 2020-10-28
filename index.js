@@ -1,7 +1,13 @@
-const menuToggle = document.querySelector('.menu-toggle');
 
-menuToggle.addEventListener('click', () => {
-  const nav = document.querySelector('.header__nav')
-    nav.classList.toggle('header__nav--open');
-    menuToggle.classList.toggle('open')
-}); 
+const closeButton = document.querySelector('.close-button')
+const openButton = document.querySelector('.open-button')
+
+const nav = document.querySelector('.header__nav')
+
+closeButton.addEventListener('click', ()=>{
+  nav.classList.remove('nav-open')
+})
+
+openButton.addEventListener('click', ()=>{
+  nav.classList.add('nav-open')
+})
