@@ -14,6 +14,11 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
   </head>
@@ -91,13 +96,17 @@
           <p class="about__content">
             Here are a few technologies I've been working with recently:
           </p>
-          <ul class="skills">
-            <li class="skills-list">JavaScript (ES6+)</li>
-            <li class="skills-list">HTML</li>
-            <li class="skills-list">(S)CSS</li>
-            <li class="skills-list">React</li>
-            <li class="skills-list">Redux</li>
-          </ul>
+          <div class="skills-div">
+            <ul class="skills">
+              <li class="skills-list">HTML</li>
+              <li class="skills-list">(S)CSS</li>
+              <li class="skills-list">JavaScript (ES6+)</li>
+            </ul>
+            <ul class="skills">
+              <li class="skills-list">React</li>
+              <li class="skills-list">Redux</li>
+            </ul>
+          </div>
         </div>
         <img src="./IMG_5003.jpg" alt="Pranav's image" class="profile-image" />
       </section>
@@ -109,7 +118,7 @@
 
       <section class="info main-grid">
         <div class="col">
-          <a class="font-link"> </a>
+          <i class="zmdi zmdi-code"></i>
           <h2 class="section-title">WEB DEVELOPMENT</h2>
           <p>
             Using HTML, CSS, and JavaScript with pre-processors and build tools
@@ -119,7 +128,7 @@
           </p>
         </div>
         <div class="col">
-          <a class="font-link"> </a>
+          <i class="zmdi zmdi-code-smartphone"></i>
           <h2 class="section-title">RESPONSIVE UI DESIGN</h2>
           <p>
             "A user interface is like a joke. If you have to explain it, it's
@@ -129,7 +138,7 @@
           </p>
         </div>
         <div class="col">
-          <a class="font-link"> </a>
+          <i class="zmdi zmdi-devices"></i>
           <h2 class="section-title">EXPERIENCE DESIGN</h2>
           <p>
             There have been far too many times where I've been trying to
@@ -164,13 +173,23 @@
       <footer class="footer main-grid">
         <ul class="social">
           <li class="social-list">
-            <a href="#" class="social-link"><i class="far fa-envelope"></i></a>
+            <a target="_blank" href="#" class="social-link"
+              ><i class="far fa-envelope"></i
+            ></a>
           </li>
           <li class="social-list">
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a
+              target="_blank"
+              href="https://github.com/prnvbirajdar"
+              class="social-link"
+              ><i class="fab fa-github"></i
+            ></a>
           </li>
           <li class="social-list">
-            <a href="#" class="social-link"
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/prnvbirajdar/"
+              class="social-link"
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </li>

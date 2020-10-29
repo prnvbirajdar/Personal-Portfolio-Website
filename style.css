@@ -141,7 +141,6 @@ img{
     left:100%;
     transform: translateX(0); 
     transition: transform ease-in-out 500ms;
-
     overflow: hidden;
 }
 
@@ -156,20 +155,29 @@ img{
     padding: 0;
     height: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
+}
+
+.nav-item{
+    margin: 3em;
 }
 
 .nav-link{
     text-decoration: none;
-    font-size: 2rem;
+    padding: 1em 2em;
+    font-size: 1.6rem;
     font-family: 'Roboto Mono', monospace;
     color: #ccd6f6;
+    text-transform: capitalize;
 }
 
 .nav-link:hover,
 .nav-link:focus{
     color:  #64ffda;
+    border: 1px solid #64ffda;
+    border-radius: 50px;
+    background-color: rgba(100, 255, 219, 0.055);
 }
 
 .close-button{
@@ -290,7 +298,12 @@ img{
     flex-direction: column;
     justify-content: center;
     padding-left: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 0;
+
+}
+
+.skills:last-child{
+    margin-bottom: 2.5em;
 }
 
 .skills-list{
@@ -302,6 +315,34 @@ img{
 
 .info-title{
     padding-bottom: 0;
+}
+
+.info__title{
+    padding-bottom:0;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
+.zmdi{
+    font-size: 4rem;
+    border: 3px solid #64ffda; 
+    padding:0.6em;
+    margin: 1em 0 0.5em 0;
+    border-radius: 10px;
+    transition: transform 500ms ease-in-out; 
+}
+
+.zmdi-code{
+    padding:0.6em 0.7em
+}
+
+.zmdi-code-smartphone{
+    padding:0.6em 0.75em
+}
+
+.zmdi:hover{
+    transform:rotate(90deg);
+
 }
 
 /* CONTACT LAYOUT */
@@ -513,6 +554,15 @@ img{
         z-index: 1000;
     }
   
+    .skills-div{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2em;
+    }
+
+    .skills:last-child{
+        margin-left: 5em;
+    }
   
 }
 
