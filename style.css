@@ -532,12 +532,10 @@ img{
 
     .header__content{
         padding-bottom: 0;
-
     }
 
     .logo-link{
         z-index: 1000;
-
     }
 
     .hero{
@@ -547,6 +545,7 @@ img{
     .col{
         grid-column: span 1;
     }
+
 
     .col:first-child{
         grid-column: 2/span 1;
@@ -593,11 +592,37 @@ img{
 }
 
 @media (min-width:800px){
+    .hero {
+        grid-column: 2/span 2;
+        margin-left: 1.5em;
+    }
+
+    .hero__heading__intro,
+    .about__content,
+    .skills-list,
+    .info__text,
+    .contact__text{
+        font-size: 1.6rem;
+    }
+
+    .hero__heading__main{
+        font-size: 6rem ;
+    }
+
+    .hero__heading__secondary{
+        width: 55rem;
+        font-size: 2rem;
+    }
+
+    .col{
+        margin-bottom: 7em;
+    }
+
+
     .profile-image{
         grid-column: 4/5;
         margin-top: 3em;
         height: 350px;
-
     }
 
     .profile-text{
@@ -611,6 +636,15 @@ img{
     .nav-link{
         font-size: 1.5rem;
     }
+
+    .contact__text{
+      margin: 1em auto;
+      width: 25em;
+      
+    }
+
+
+
 }
 
 
