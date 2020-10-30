@@ -2,11 +2,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
+    <!-- SOCIAL ICONS  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -14,10 +17,14 @@
       crossorigin="anonymous"
     />
 
+    <!-- INFO ICONS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
     />
+
+    <!-- ANIMATE ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
@@ -53,7 +60,6 @@
             </li>
           </ul>
         </nav>
-        <a id="top"></a>
       </div>
     </header>
 
@@ -71,9 +77,14 @@
         <a href="#" class="btn btn--resume">Resume</a>
       </section>
 
-      <section class="about main-grid">
+      <section
+        data-aos="zoom-in-up"
+        class="about main-grid"
+      >
         <a id="about"></a>
-        <h2 class="about__title">About Me</h2>
+        <h2 class="about__title" data-aos="zoom-in-up" data-aos-duration="1000">
+          About Me
+        </h2>
         <div class="profile-text">
           <p class="about__content">
             I’m a first year student at Algonquin College studying Computer
@@ -111,12 +122,18 @@
         <img src="./IMG_5003.jpg" alt="Pranav's image" class="profile-image" />
       </section>
 
-      <section class="info-title main-grid">
+      <section
+        data-aos="zoom-in-up"
+        class="info-title main-grid"
+      >
         <a id="what-i-do"></a>
         <h2 class="title info__title">What I Do</h2>
       </section>
 
-      <section class="info main-grid">
+      <section
+        class="info main-grid"
+        data-aos="zoom-in-up"
+      >
         <div class="col">
           <i class="zmdi zmdi-code"></i>
           <h2 class="section-title">WEB DEVELOPMENT</h2>
@@ -150,7 +167,10 @@
         </div>
       </section>
 
-      <section class="portfolio main-grid">
+      <section
+        data-aos="zoom-in-up"
+        class="portfolio main-grid"
+      >
         <a id="portfolio"></a>
         <h2 class="title portfolio__title">Some Things I've Built</h2>
         <div class="project">Project 1</div>
@@ -158,7 +178,10 @@
         <div class="project">Project 3</div>
       </section>
 
-      <section class="contact main-grid">
+      <section
+        data-aos="zoom-in-up"
+        class="contact main-grid"
+      >
         <a id="contact"></a>
         <a class="contact__icon"><i class="far fa-paper-plane"></i> </a>
 
@@ -206,6 +229,13 @@
       </footer>
     </main>
 
+    <!-- ANIMATE ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Smooth Scrolling -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Index.js  -->
     <script src="./index.js"></script>
   </body>
 </html>
