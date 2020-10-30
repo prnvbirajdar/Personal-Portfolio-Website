@@ -25,17 +25,16 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #ccd6f6;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.07rem;
     line-height: 1.7;
     position: relative;
     box-sizing: border-box;
-    font-size: 1.4rem;
-    /* min-height: 100vh; not sure why i did it  */
+    font-size: 1.5rem;
 }
 
 h2{
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 img{
@@ -67,7 +66,7 @@ img{
 
 /* seperated info-title and col in info section because it was breaking under same section */
 
-.title,
+.about__title,
 .info,
 .info-title,
 .portfolio,
@@ -86,14 +85,17 @@ img{
 
 /* HEADER LAYOUT */
 
-.header{
-    background-color: #0a192f;
-}
-
 .header__content{
     display: flex;
     grid-column: 1/-1;
     box-shadow: 0px 3px 6px 1px rgba(0, 12, 34, 1);
+    padding-bottom: 0.7em;
+    top: 0;
+
+    position: fixed;
+    transition: top 500ms;
+    width: 100%;
+    background-color: #0a192f;
 }
 
 /* LOGO */
@@ -102,13 +104,13 @@ img{
     margin: 1em 2em;
     cursor: pointer;
     text-decoration: none;
-    position: absolute;
+    position: absolute;    
 }
 
 .logo{
     font-size: 2rem;
     font-weight: 100;
-    border: 3px solid white;
+    border: 3px solid #ccd6f6;
     color: #ccd6f6;
     padding: 0 0.25em;
 }
@@ -165,7 +167,8 @@ img{
 
 .nav-link{
     text-decoration: none;
-    padding: 1em 2em;
+    padding-bottom:0.25em;
+    padding-top:1em;
     font-size: 1.6rem;
     font-family: 'Roboto Mono', monospace;
     color: #ccd6f6;
@@ -175,9 +178,7 @@ img{
 .nav-link:hover,
 .nav-link:focus{
     color:  #64ffda;
-    border: 1px solid #64ffda;
-    border-radius: 50px;
-    background-color: rgba(100, 255, 219, 0.055);
+    border-bottom: 1px solid #64ffda;
 }
 
 .close-button{
@@ -217,6 +218,7 @@ img{
 
 .hero__heading {
     backface-visibility: hidden;
+    margin-top: 7em;
 }
 
 .hero__heading__intro {
@@ -286,7 +288,15 @@ img{
     margin: 0.5em 0;
 }
 
+.btn--resume{
+    margin-bottom: 10em;
+}
+
 /* ABOUT LAYOUT */
+
+.about__title{
+    margin-bottom: 0.8em;
+}
 
 .about__content{
     margin: 0.7em 0.5em;
@@ -341,20 +351,28 @@ img{
 }
 
 .zmdi:hover{
-    transform:rotate(90deg);
+    transform:rotate(180deg);
 
 }
 
 /* CONTACT LAYOUT */
 
 .contact__icon{
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5em;
 }
 
-.contact__btn{
-    margin: 0 auto 5em auto;
+.contact__title{
+    margin-bottom: 0.5em;
 
+}
+
+.contact__text{
+    margin-bottom: 1em;
+}
+
+.contact__btn{
+    margin: 0 auto 3em auto;
 }
 
 /* FOOTER LAYOUT */
@@ -391,11 +409,10 @@ img{
     transition: color 0.2s ease-out;
 }
 
-
 .copyright{
     font-family: "roboto mono",monospace;
     opacity: 0.4;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #a8b2d1;
 }
@@ -513,6 +530,16 @@ img{
         grid-column: 2/span 3;
     }
 
+    .header__content{
+        padding-bottom: 0;
+
+    }
+
+    .logo-link{
+        z-index: 1000;
+
+    }
+
     .hero{
         padding: 5em 0;
     }
@@ -533,27 +560,26 @@ img{
     .header__nav{
         position: initial;
         background-color: #0a192f;
-        margin-bottom: 2.4em;        
     }
 
     .nav-list{
-        flex-direction: row;
+        flex-direction:row;
         justify-content: flex-end;
-        padding-top: 3em;
     }
 
     .nav-item{
-        margin-right: 2em;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    .nav-list:last-child{
+        margin-right: 1.5rem;
     }
 
     .nav-link{
         font-size: inherit;
     }
 
-    .logo-link{
-        z-index: 1000;
-    }
-  
     .skills-div{
         display: flex;
         justify-content: flex-start;
@@ -577,8 +603,16 @@ img{
     .profile-text{
         grid-column: 2/span 2;
     }
+    
+    .nav-item{
+        margin-right: 2em;
+    }
 
+    .nav-link{
+        font-size: 1.5rem;
+    }
 }
+
 
 @media (min-width: 1100px){
     .logo-link{
