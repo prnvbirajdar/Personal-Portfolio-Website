@@ -305,15 +305,21 @@ img{
     margin: 0.7em 0.5em;
 }
 
+.skills li::before{
+    content: "⯈" ;
+    color:#64ffda ;
+    margin-right: 1em;
+    padding: 0;
+}
+
 .skills{
-    list-style-type: "⯈";
+    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1em;
-    margin-bottom: 0;
-
+   
 }
+
 
 .skills:last-child{
     margin-bottom: 2.5em;
@@ -322,6 +328,8 @@ img{
 .skills-list{
     margin: 0.25em;
     padding-left: 0.5em;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.4rem;
 }
 
 
@@ -641,6 +649,10 @@ img{
         font-size: 1.5rem;
     }
 
+    .skills-list{
+        font-size: 1.4rem;
+    }
+
     .contact__text{
       margin: 1em auto;
       width: 25em;
@@ -681,6 +693,10 @@ img{
     .hero__heading__secondary{
         width: 60rem;
         font-size: 2rem;
+    }
+
+    .skills-list{
+        font-size: 1.6rem;
     }
 
     .col{
