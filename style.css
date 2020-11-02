@@ -82,6 +82,13 @@ img{
     padding: 2em 0;
 }
 
+.about,
+.info-title,
+.portfolio,
+.contact{
+    margin-top: 8em;
+}
+
 /* HEADER LAYOUT */
 
 .header__content{
@@ -288,9 +295,9 @@ img{
     margin: 0.5em 0;
 }
 
-.btn--resume{
+/* .btn--resume{
     margin-bottom: 10em;
-}
+} */
 
 /* ABOUT LAYOUT */
 
@@ -320,6 +327,7 @@ img{
     margin: 0.25em;
     padding-left: 0.5em;
 }
+
 
 /* INFO TITLE LAYOUT */
 
@@ -642,13 +650,14 @@ img{
       width: 25em;
       
     }
-
-
-
 }
 
 
 @media (min-width: 1100px){
+    h2{
+        font-size: 4rem;
+    }
+
     .logo-link{
         margin-left: 10em;
     }
@@ -657,4 +666,34 @@ img{
         margin-right: 9em;
     }
 
+    .hero {
+        grid-column: 2/span 2;
+        margin-left: 1.5em;
+    }
+
+    .about__content,
+    .skills-list,
+    .info__text,
+    .contact__text{
+        font-size: 1.8rem;
+    }
+
+    .hero__heading__main{
+        font-size: 8rem ;
+    }
+
+    .hero__heading__secondary{
+        width: 60rem;
+        font-size: 2rem;
+    }
+
+    .col{
+        margin-bottom: 7em;
+    }
+
+    .profile-image{
+        margin-top: 5em;
+        height: 375px;
+        object-fit: cover;
+    }
 }
