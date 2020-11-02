@@ -295,10 +295,6 @@ img{
     margin: 0.5em 0;
 }
 
-/* .btn--resume{
-    margin-bottom: 10em;
-} */
-
 /* ABOUT LAYOUT */
 
 .about__title{
@@ -695,5 +691,19 @@ img{
         margin-top: 5em;
         height: 375px;
         object-fit: cover;
+    }
+
+    .contact__icon{
+        font-size: 4rem;
+        margin-bottom: 1em;
+    }
+
+    .social-link:link,
+    .social-link:visited{
+        font-size: 2.4rem;
+    }
+
+    .contact__btn{
+        margin: 1em auto 10em auto;
     }
 }
